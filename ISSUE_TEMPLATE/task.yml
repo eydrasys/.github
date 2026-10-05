@@ -1,0 +1,58 @@
+name: Tarefa
+description: Item de trabalho padrão EYDRA
+title: "[KEY-N] "
+labels: []
+body:
+  - type: dropdown
+    id: projeto
+    attributes:
+      label: Projeto
+      options: [OPS, SITE, SMK, ARQ]
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options: [feature, bug, task, spike, chore, docs]
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options: [P0, P1, P2, P3]
+    validations:
+      required: true
+  - type: dropdown
+    id: estimativa
+    attributes:
+      label: Estimativa (pontos)
+      options: ["1", "2", "3", "5", "8"]
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que e por quê, em linguagem direta.
+    validations:
+      required: true
+  - type: textarea
+    id: aceite
+    attributes:
+      label: Critérios de aceite
+      description: Lista verificável.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: origem
+    attributes:
+      label: Origem
+      options: [interno, cliente, parceiro]
+    validations:
+      required: true
+  - type: input
+    id: links
+    attributes:
+      label: Links (Notion, asset_id)
+      description: URL da nota ou IDs como ARQ-A3.

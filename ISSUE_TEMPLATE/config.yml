@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Regras e convenções da EYDRA
+    url: https://github.com/eydrasys/eydra-ops
+    about: Convenções de ID, prioridade, status e commit.
